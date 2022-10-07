@@ -12,9 +12,9 @@ label.pack(anchor="center",fill="both",expand=1)
 
 
 def Time():
-    string = strftime("%H:%M:%S")
+    string = strftime("%H:%M:%S %p")
     label.config(text=string)
-    label.after(1000,Time)
+    label.after(1000, Time)
     
 Time()
 root.mainloop()
